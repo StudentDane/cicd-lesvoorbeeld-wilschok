@@ -14,7 +14,7 @@ namespace CICD.Test
             // Act 
             var actual = stringCalculator.Add("");
             // Assert 
-            Assert.Equal(20, actual);
+            Assert.Equal(0, actual);
         }
 
         [Fact]
