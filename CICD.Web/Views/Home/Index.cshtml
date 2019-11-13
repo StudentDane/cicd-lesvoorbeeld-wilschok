@@ -1,0 +1,15 @@
+﻿@using CICD.Web.ViewModels
+@model StringCalculatorViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Stringcalculator</h1>
+    <form asp-controller="Home" asp-action="Index" method="post">
+        <input type="text" asp-for="Input" value="@Model.Input" />
+        <p>Sum: @Model.Sum</p>
+        @if (Model.Error != String.Empty)
+        {
+            <p>Error: @Model.Error</p>
+        }
+        <input type="submit" />
+    </form>
+</div>
