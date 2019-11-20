@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CICD.Web", "CICD.Web\CICD.Web.csproj", "{0F3384FC-BD1B-4804-8031-521C9F1DA114}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CICD.Web", "CICD.Web\CICD.Web.csproj", "{0F3384FC-BD1B-4804-8031-521C9F1DA114}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CICD.Lib", "CICD.Lib\CICD.Lib.csproj", "{8E36D7DE-3FDD-4029-A02C-960BAD882B80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CICD.Lib", "CICD.Lib\CICD.Lib.csproj", "{8E36D7DE-3FDD-4029-A02C-960BAD882B80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CICD.Test", "CICD.Test\CICD.Test.csproj", "{903BD28B-87BF-4A51-BBA8-B0B7F687BD65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CICD.Test", "CICD.Test\CICD.Test.csproj", "{903BD28B-87BF-4A51-BBA8-B0B7F687BD65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{249D5F92-AE09-4F5A-BE51-CFC2702E81E8}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
