@@ -17,7 +17,8 @@ COPY . .
 
 # test stage
 # run separate: cached layer if tests success
-RUN dotnet test CICD.Test/CICD.Test.csproj
+ENV TEAMCITY_PROJECT_NAME = ${TEAMCITY_PROJECT_NAME}
+RUN dotnet test CICD.Test/CICD.Test.csproj --verbosity=normal
 
 # build in release mode to folder publish
 RUN dotnet publish CICD.Web/CICD.Web.csproj -c Release -o /publish 
